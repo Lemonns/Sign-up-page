@@ -1,0 +1,146 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.side-image-container {
+    background-image: url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    height: 100%;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+.side-image-container .logo-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(8, 8, 8, 0.438);
+    margin-top: 170px;
+    height: 145px;
+}
+
+.logo-container .logo{
+    height: 125px;
+    display: flex;
+}
+
+
+#logo-text {
+    display: flex;
+    color: white;
+    font-size: 5.1rem;
+    font-family: 'Norse';
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+    justify-content: center;
+    padding-bottom: 9%;
+}
+
+.heading-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 90%;
+    padding-left: 2%;
+    padding-bottom: 20px;
+}
+
+#form-title {
+    font-family: sans-serif;
+    padding: 0;
+    margin-top: 0;
+}
+
+.main-form {
+    background-color: white;
+    padding: 2%;
+    box-shadow: rgba(99, 99, 99, 0.3) 0px 4px 8px 0px;
+}
+
+.first-last, .email-phone, .passwords {
+    display: flex;
+    gap: 10%;
+    margin-bottom: 2%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label{
+    font-family: sans-serif;
+    display: block;
+    line-height: 15px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+input {
+    width: 120%;
+    height: 70%;
+    border: solid 1px rgb(185, 182, 182);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+.btn {
+    padding-left: 3%;
+    padding-top: 4%;
+}
+
+.btn button {
+    cursor: pointer;
+    padding: 12px 15px 12px 15px;
+    border-radius: 10px;
+    width: 200px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#bottom {
+    padding-left: 3%;
+    padding-top: 2%;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+input:focus {
+	outline: none;
+  	border: 2px solid rgb(108, 108, 212, 0.4);
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid red;
+}
